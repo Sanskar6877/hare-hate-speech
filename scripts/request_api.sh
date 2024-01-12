@@ -6,7 +6,7 @@ SPLIT=train
 # false for zeroshot, true for multi-hop stage
 MERGE=True
 # path for request file
-REQUEST_NAME=request.jsonl
+REQUEST_NAME=request.json
 # pred for zero-shot
 ATTRIBUTE=pred
 # set your own output file path

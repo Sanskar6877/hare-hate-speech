@@ -24,7 +24,7 @@ python oai/format_oai_data.py \
   --task_type request && \
 python oai/api_request_parallel_processor.py \
   --requests_filepath $REQUEST_NAME \
-  --save_filepath "${OUT_FILE}_raw.jsonl" \
+  --save_filepath "${OUT_FILE}_raw.json" \
   --request_url https://api.openai.com/v1/chat/completions \
   --api_key $API_KEY \
   --max_requests_per_minute 3000 \
@@ -35,8 +35,8 @@ python oai/format_oai_data.py \
   --data_path data/$data \
   --data $data \
   --data_split $SPLIT \
-  --raw_output "${OUT_FILE}_raw.jsonl" \
-  --filtered_output "${OUT_FILE}.jsonl" \
+  --raw_output "${OUT_FILE}_raw.json" \
+  --filtered_output "${OUT_FILE}.json" \
   --task_type filter \
   --attribute $ATTRIBUTE \
   --merge $MERGE
